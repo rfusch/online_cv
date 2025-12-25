@@ -6,21 +6,21 @@
 }
 
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #339289;
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --text-light: #9ca3af;
     --bg-primary: #ffffff;
     --bg-secondary: #f9fafb;
     --border-color: #e5e7eb;
-    --accent-color: #3b82f6;
+    --accent-color: #45a89e;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
     background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
@@ -288,6 +288,41 @@ body {
 
 .project-item .skill-tags {
     margin-top: 1rem;
+}
+
+/* Publikationen */
+.publication-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.publication-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.publication-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 0.75rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.publication-link:hover {
+    color: var(--accent-color);
+    gap: 0.75rem;
+}
+
+.publication-link svg {
+    flex-shrink: 0;
 }
 
 /* Footer */
